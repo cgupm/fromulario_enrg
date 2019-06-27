@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}    % need for subequations
+\usepackage{hyperref}   % use for hypertext links, including those to external documents and URLs
+\usepackage{esint}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{amsfonts}
+\usepackage{fullpage}
+\usepackage[spanish]{babel}
+
+
+\title{Formulario de ENRG - ETSIT UPM}
+\author{Carlos García-Mauriño}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\twocolumn
+
+\section{Transformadores}
+\label{sec:transformadores}
+
+\subsection{Rendimiento}
+\label{sub:rendimiento}
+
+\begin{itemize}
+		\item Índice de carga óptimo: $ C_{opt} = \sqrt \frac{P_0}{P_{CC}} $ 
+\end{itemize}
+
+
+\section{Fotovoltaica}
+\label{sec:fotovoltaica}
+
+\subsection{Constante solar}
+\label{sub:constante_solar}
+
+\[ B_{0}^{R} = \frac{PTS}{4 \pi R^2} \]
+
+\[ B_0 \mbox{(Tierra)} = 1367 \,\,  W/m^2 \]
+
+\subsection{Rendimiento}
+\label{sub:rendimiento}
+
+\begin{itemize}
+		\item Performance Ratio:
+				\[ PR = \frac{E_t}{P_{NOM} \frac{G_{da} 365}{G^{*}} } \]
+		\item Temperatura de la célula:
+				\[ T_C = \frac{NOCT - 20ºC}{0.8 kW/m^2} G + T_a \]
+		\item Potencia nominal con márgenes:
+				\[ P_{NG} = \frac{F_{SG} L_d}{ \frac{G_{dm}}{G^*} PR} \]
+\end{itemize}
+
+\[ I_{SC} = {I_{SC}}^{*} \frac{G}{G^*} \]
+
+\[ V_{OC} = {V_{OC}}^* \left[ 1 + \beta (T_C - {T_C}^*) \right] \]
+
+
+\end{document}
